@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank</title>
+        <!-- tailwind css link -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css link -->
+
+</head>
+<body class="bg-slate-200">
+    <div class="login-interface  mt-48 flex flex-col justify-center items-center">
+        <h2 class="text-5xl capitalize font-bold mb-8 ml-8">wellcome to your <span class="text-lime-900">bank !</span></h2>
+            <div class="calculate-area grid grid-cols-1 md:grid-cols-3 gap-4 w-9/12">
+                <div class="bg-rose-400 p-8 shadow-xl rounded">
+                    <h2 class="capitalize text-2xl">deposite</h2>
+                    <p class="mt-2 text-5xl overflow-auto">$<span id="deposite-previous">00</span></p>
+                </div>
+                <div class="bg-slate-400 p-8 shadow-xl rounded">
+                    <h2 class="capitalize text-2xl">withdraw</h2>
+                    <p class="mt-2 text-5xl overflow-auto">$<span id="withdraw-previous">00</span></p>
+                </div>
+                <div class="bg-slate-300 p-8 shadow-xl rounded">
+                    <h2 class="capitalize text-2xl">balance</h2>
+                    <p class="mt-2 text-5xl overflow-auto">$<span id="balance-previous">520</span></p>
+                </div>
+            </div>
+            <div class="calculate-area grid grid-cols-1 md:grid-cols-2 gap-4 w-9/12 mt-8">
+                <div class="bg-slate-400 p-8 shadow-xl rounded">
+                    <h2 class="capitalize text-2xl">please deposite</h2>
+                    <input class="p-2 pl-4 my-4 rounded outline-0 w-9/12 text-xl" type="text" name="" id="deposite-input-field">
+                    <button id="deposite-btn" class="block bg-slate-500 p-2 px-4 shadow-2xl w-fit text-lg uppercase font-semibold text-white tracking-widest">submit</button>
+                </div>
+            <div class="bg-slate-400 p-8 shadow-xl rounded">
+                <h2 class="capitalize text-2xl">please withdraw</h2>
+                <input class="p-2 pl-4 my-4 rounded outline-0 w-9/12 text-xl" type="text" name="" id="withdraw-input-field">
+                <button id="withdraw-btn" class="block bg-slate-500 p-2 px-4 shadow-2xl w-fit text-lg uppercase font-semibold text-white tracking-widest">submit</button>
+            </div>
+
+       </div>
+       <script src="./bank.js"></script>
+</body>
+</html>
